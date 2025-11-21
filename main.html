@@ -4,55 +4,10 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
   <title>Semantic Navbar & Audios</title>
-
-  <!-- external stylesheet (optional) -->
-  <link rel="stylesheet" href="styles.css">
-
-  <!-- inline styles for demo (you can remove if using styles.css) -->
-  <style>
-    body {
-      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-      padding: 2rem;
-      background: #f8fafc;
-      color: #0f172a;
-    }
-    nav {
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(2,6,23,0.08);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 1rem;
-      margin: 0;
-      padding: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #0369a1;
-      font-weight: 600;
-    }
-    section.audio {
-      margin-top: 1.5rem;
-      background: #fff;
-      padding: 1rem;
-      border-radius: 8px;
-      box-shadow: 0 1px 4px rgba(2,6,23,0.06);
-    }
-    .track {
-      margin: 0.75rem 0;
-    }
-  </style>
 </head>
 <body>
-  <!-- Tip for accessibility: a skip link is helpful for keyboard users -->
-  <a class="skip-link" href="#main" style="position:absolute;left:-9999px">Skip to main content</a>
-
-  <!-- the entire body must be written by student -->
   <!-- Part 1: Semantic navigation bar -->
-  <nav aria-label="Main navigation">
+  <nav>
     <ul>
       <li><a href="#home">Home</a></li>
       <li><a href="#about">About</a></li>
@@ -61,33 +16,29 @@
   </nav>
 
   <!-- Part 2: Audio section -->
-  <main id="main">
-    <section class="audio" aria-labelledby="audio-heading">
-      <h2 id="audio-heading">3 random audios</h2>
+  <section aria-labelledby="audio-heading">
+    <h2 id="audio-heading">3 random audios</h2>
 
-      <div class="track">
-        <audio controls preload="none" aria-label="Track 1: The Neverwritten Role Playing Game">
-          <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+    <div>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
-      <div class="track">
-        <audio controls preload="none" aria-label="Track 2: Epoq - Lepidoptera">
-          <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
+    <div>
+      <audio controls>
+        <source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
 
-      <div class="track">
-        <audio controls preload="none" aria-label="Track 3: Paza Moduless">
-          <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
-          Your browser does not support the audio element.
-        </audio>
-      </div>
-    </section>
-  </main>
-
-  <script type="text/javascript" src="./script.js"></script>
+    <div>
+      <audio controls>
+        <source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </div>
+  </section>
 </body>
 </html>
