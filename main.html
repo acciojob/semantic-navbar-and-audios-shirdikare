@@ -4,12 +4,58 @@
 
 <head>
 	<link rel="stylesheet" href="styles.css">
+	<style>
+body { font-family: system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; padding: 2rem; background: #f8fafc; color:#0f172a }
+nav { background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(2,6,23,0.08); }
+nav ul { list-style: none; display: flex; gap: 1rem; margin: 0; padding: 0 }
+nav a { text-decoration: none; color: #0369a1; font-weight: 600 }
+section.audio { margin-top: 1.5rem; background: #fff; padding: 1rem; border-radius: 8px; box-shadow: 0 1px 4px rgba(2,6,23,0.06) }
+.track { margin: 0.75rem 0 }
+</style>
 </head>
 
 <body>
 	<!-- the entire body must be written by student -->
     <script type="text/javascript" src="./script.js">
 </script>
+	<!-- Part 1: Semantic navigation bar -->
+<nav aria-label="Main navigation">
+<ul>
+<li><a href="#home">Home</a></li>
+<li><a href="#about">About</a></li>
+<li><a href="#contact">Contact</a></li>
+</ul>
+</nav>
+
+
+<!-- Part 2: Audio section -->
+<section class="audio" aria-labelledby="audio-heading">
+<h2 id="audio-heading">3 random audios</h2>
+
+
+<div class="track">
+<audio controls>
+<source src="http://commondatastorage.googleapis.com/codeskulptor-demos/DDR_assets/Kangaroo_MusiQue_-_The_Neverwritten_Role_Playing_Game.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+
+<div class="track">
+<audio controls>
+<source src="http://commondatastorage.googleapis.com/codeskulptor-assets/Epoq-Lepidoptera.ogg" type="audio/ogg">
+Your browser does not support the audio element.
+</audio>
+</div>
+
+
+<div class="track">
+<audio controls>
+<source src="http://codeskulptor-demos.commondatastorage.googleapis.com/pang/paza-moduless.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio>
+</div>
+</section>
 
 </body>
 
